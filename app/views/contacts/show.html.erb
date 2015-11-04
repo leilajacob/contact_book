@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @contact.avatar.url(:medium) %>
+</p>
+
+<p>
+  <%= @contact.full_name %>
+</p>
+
+<p>
+  <%= @contact.business_name %>
+</p>
+
+<p>
+  <%= @contact.full_address %>
+</p>
+
+<p>
+  <%= @contact.phone1 %>
+</p>
+
+<p>
+  <%= @contact.phone2 %>
+</p>
+
+<p>
+  <%= @contact.email %>
+</p>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>

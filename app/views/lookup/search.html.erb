@@ -1,0 +1,22 @@
+<div class="well">
+
+<h1>Search for a Contact</h1>
+
+<%= form_tag(results_path) do %>
+	<div class="form-group">
+ 		<%= text_field_tag :name, nil, placeholder: "Search By Name (press enter to submit)", class: "form-control" %>
+	</div>
+<% end %>
+
+<%= form_tag(results_path) do %>
+	<div class="form-group">
+ 		<%= text_field_tag :city, nil, placeholder: "Search By City (press enter to submit)", class: "form-control" %>
+	</div>
+<% end %>
+
+
+<p>
+<%= link_to "Enter a New Contact", new_contact_path, class: "btn btn-info" %>
+</p>
+
+</div>

@@ -1,0 +1,16 @@
+<div class="well">
+
+<h1>Contacts Found</h1>
+
+<% if !@results.empty? %>
+	<ul>
+		<% @results.each do |contact| %>
+		<li><%= contact.full_name %>, <%= contact.phone1 %></li>
+		<% end %>
+	</ul>
+<% else %>
+	<p>No contacts found by that name.</p>
+	<p><%= link_to "Search for Another Name", root_path %></p>
+<% end %>
+
+</div>
